@@ -1,3 +1,8 @@
 {
-  "item.astralithmod.astral_shard": "Astral Shard"
+  "item.astralithmod.astral_shard": "Astral Shard",
+  "item.astralithmod.astralith": "Astralith",
+  "item.astralithmod.deal": "Deal",
+  "item.astralithmod.astralith_glaive": "Astralith Glaive",
+
+  "creativetab.astralithmod.astralith_tab": "Astralith"
 }

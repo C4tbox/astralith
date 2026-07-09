@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AB ",
+    "BCD",
+    " DA"
+  ],
+  "key": {
+    "A": {
+      "item": "astralithmod:astral_shard"
+    },
+    "B": {
+      "item": "minecraft:blaze_powder"
+    },
+    "C": {
+      "item": "minecraft:nether_star"
+    },
+    "D": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "astralithmod:astralith"
+  }
+}

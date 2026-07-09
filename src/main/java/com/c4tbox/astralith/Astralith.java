@@ -1,5 +1,6 @@
 package com.c4tbox.astralith;
 
+import com.c4tbox.astralith.item.ModCreativeModeTabs;
 import com.c4tbox.astralith.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -34,10 +35,9 @@ public class Astralith {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
-        ModItems.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
-        // Register the item to a creative tab
-        modEventBus.addListener(this::addCreative);
+        ModItems.register(modEventBus);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -45,13 +45,6 @@ public class Astralith {
 
     private void commonSetup(FMLCommonSetupEvent event) {
 
-    }
-
-    // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.ASTRAL_SHARD);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
